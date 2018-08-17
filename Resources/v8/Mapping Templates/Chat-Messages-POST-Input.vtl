@@ -1,5 +1,5 @@
-#set($inputRoot = $input.path('$'))
+#set($inputRoot = $input.path('$')) --- this is to map url path to lambda event object properties
 {
-    "id": "$input.params('id')",
-    "message": "$inputRoot"
+    "id": "$input.params('id')", 
+    "message": "$inputRoot" ---$input Root is entire request body
 }
